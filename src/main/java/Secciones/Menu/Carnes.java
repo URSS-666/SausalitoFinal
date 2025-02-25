@@ -7,6 +7,7 @@ package Secciones.Menu;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import Pedido.Factura.tap1;
 
 /**
  *
@@ -170,11 +171,13 @@ public class Carnes extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonTerneraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonTerneraActionPerformed
-        // TODO add your handling code here:
+        tap1 form = new tap1();
+        form.setVisible(true);
     }//GEN-LAST:event_BotonTerneraActionPerformed
 
     private void BotonCerdoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCerdoActionPerformed
-        // TODO add your handling code here:
+        tap1 form = new tap1();
+        form.setVisible(true);
     }//GEN-LAST:event_BotonCerdoActionPerformed
 
     private void BotonCorderoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCorderoActionPerformed

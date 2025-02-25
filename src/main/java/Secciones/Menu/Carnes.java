@@ -7,6 +7,8 @@ package Secciones.Menu;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import java.awt.event.ActionEvent;
+import javax.swing.JFrame;
 
 /**
  *
@@ -24,6 +26,11 @@ public class Carnes extends javax.swing.JPanel {
         configurarBoton(BotonCordero, "Cordero al horno", "/cordero-al-horno-.jpeg", "$30000","Solo domingos","$40000");
         configurarBoton(BotonCarnesMixtas, "Carnes mixtas", "/carnes-mistas.jpeg", "$30000","Res/cerdo, res/cordero, cerdo/cordero","$40000");
         configurarBoton(BotonTricarne, "Tricarne", "/tricarne.jpeg", "$70000","Res, cerdo, cordero", null);
+        BotonTernera.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonTerneraActionPerformed(evt);
+            }
+        });
     }
 
     /**
@@ -74,6 +81,14 @@ public class Carnes extends javax.swing.JPanel {
     ImageIcon img = new ImageIcon(getClass().getResource(url));
     return new ImageIcon(img.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH));
     }
+    
+    private void BotonTerneraActionPerformed(java.awt.event.ActionEvent evt) {
+        JFrame terneraForm = new JFrame("Ternera Form");
+        terneraForm.setSize(400, 300);
+        terneraForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        terneraForm.setVisible(true);
+    }
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 

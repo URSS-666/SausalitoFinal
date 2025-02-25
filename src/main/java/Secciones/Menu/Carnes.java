@@ -9,6 +9,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import java.awt.event.ActionEvent;
 import javax.swing.JFrame;
+import Pedido.Factura.tap1;
 
 /**
  *
@@ -83,10 +84,8 @@ public class Carnes extends javax.swing.JPanel {
     }
     
     private void BotonTerneraActionPerformed(java.awt.event.ActionEvent evt) {
-        JFrame terneraForm = new JFrame("Ternera Form");
-        terneraForm.setSize(400, 300);
-        terneraForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        terneraForm.setVisible(true);
+        tap1 form = new tap1();
+        form.setVisible(true);
     }
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
